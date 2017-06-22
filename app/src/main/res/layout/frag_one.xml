@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:text="销售模块"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/blue_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edv_f1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit"
+            android:hint="输入商品条形码"
+            android:singleLine="true">
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:id="@+id/tel_et_clearbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/edv_f1"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/clear_button"
+            android:visibility="gone" />
+        <Button
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="搜索"
+            android:id="@+id/search_btn_f1"
+            android:background="@drawable/bg_alibuybutton"
+            android:layout_toEndOf="@+id/edv_f1"
+            android:layout_toRightOf="@+id/edv_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.4"
+            android:text="商品名称："
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/tv_f1_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.4"
+            android:text="商品码数："
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/tv_f1_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.4"
+            android:text="商品颜色："
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/tv_f1_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.4"
+            android:text="销售数量："
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:id="@+id/et_f1_sell"
+            style="@style/main_button"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.4"
+            android:text="销售价格："
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:id="@+id/et_f1_price"
+            style="@style/main_button"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="确定"
+        android:background="@drawable/bg_alibuybutton"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/btn_f1_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
